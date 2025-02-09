@@ -76,6 +76,13 @@
       height: auto;
       margin: 10px 0;
     }
+    .footer {
+      background: #a64b2a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -103,6 +110,7 @@
    .carousel-caption h1,
   .carousel-caption p {
     color: white; /* เปลี่ยนตัวอักษรใน <h1> และ <p> เป็นสีขาว */
+    }
       .container-fluid {
         font-size: 1.125rem;
       }
@@ -183,20 +191,6 @@
         display: block !important;
       }
 
-    }
-    .background-section {
-    background-image: url(Horror.png);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-  }
-  .footer {
-            display: flex;
-            justify-content: space-around;
-            padding: 30px;
-            background-color: black;
-  }
-
       
     </style>
 
@@ -232,6 +226,13 @@
         <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
       </button>
       <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
         <li>
           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
             <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
